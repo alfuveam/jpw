@@ -3,23 +3,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html">
     <h:head>
-        <title>Facelet Title</title>
-        
+        <title>Kappa</title>
+
         <link rel="stylesheet" 
               href="http://localhost:8084/op/bootstrap/css/bootstrap.min.css" />
-        
+
         <link rel="stylesheet" 
               href="http://localhost:8084/op/bootstrap/css/bootstrap-theme.min.css" />
         
+        <link rel="stylesheet" 
+              href="http://localhost:8084/op/bootstrap/css/kappa.css" />        
+
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" />
-        
+
         <script src="http://localhost:8084/op/bootstrap/js/bootstrap.min.js" />
         <!--http://getbootstrap.com/getting-started/-->
-        
+
     </h:head>
     <h:body>
-        <meta http-equiv="refresh" content="1;url:http://localhost:8084/op/exercum"/>
-        <button class="btn btn-primary">botao</button>
+        <header class ="bs-docs-header">
+            <div class="row vaiserazul">
+                  <h2><center>Página com todos os exercícios</center></h2>
+            </div>        
+        </header>
+        <div class="bs-docs-header" data-example-id="striped-table"> 
+            <table class="table table-striped"> 
+                <caption><h1>Lista de exercícios</h1></caption>
+                <thead> <tr> <th>#</th> <th>Nome exercicio</th> <th>Descrição</th></tr> </thead> 
+                <tbody> 
+                    <tr> <th scope="row">1</th> <td>Revisão CSS/HTML</td> <td>Revisão sobre como funciona uma pagina web</td> </tr> 
+                    <tr style="cursor: pointer;" onclick="window.document.location='http://localhost:8084/op/exerc_bootstrap/dois_index.xhtml';"> <th scope="row">2</th> <td>Bootstrap</td> <td>Explicação sobre o framework bootstrap</td> </tr> 
+                    <tr> <th scope="row">3</th> <td>Exemplo</td> <td>Para mais rows</td> </tr>
+                </tbody>
+            </table>
+        </div>
     </h:body>
 </html>
 
